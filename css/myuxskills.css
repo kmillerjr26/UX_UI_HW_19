@@ -1,0 +1,25 @@
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.child {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    margin: 20px 0;
+}
+
+.symbol {
+    background-color: black;
+    height: 100%;
+    width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    .child {
+        grid-template-columns: 100%;
+        grid-template-rows: 6fr 6fr;
+    }
+}
