@@ -1,97 +1,135 @@
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 10fr 2fr;
+}
+
+a {
+    text-decoration: none;
 }
 
 .navigation {
-    border-bottom: 1px solid gray;
-    height: 15vh;
+    height: 100vh;
+    width: 18%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding-top: 7%;
+    padding-left: 2%;
 }
 
 .logo {
-    width: 23%;
-    padding: 1%;
-    height: 40%;
-    margin-top: -5px;
-}
-
-.logopic {
     width: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5%;
 }
 
 nav {
     width: 72%;
-    padding: 1%;
-    font-family: "Inter", sans-serif;
-    text-transform: uppercase;
 }
 
 nav ul {
-    width: 45%;
-    float: right;
+    width: 50%;
+    margin-left: 60%;
 }
 
 nav li {
-    padding: 0 10px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    padding: 15px 0;
+    list-style: none;
+    float: right;
 }
 
 nav li:hover {
     color: #00e693;
+    text-decoration: underline;
     cursor: pointer;
+}
+
+nav li:hover span {
+    color: #00e693;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav li:active {
+    color: #00e693;
 }
 
 nav li img {
     width: 17px;
     height: 17px;
-
 }
 
-.heroImg {
-    height: 600px;
-    padding: 25px;
+.pageContent {
+    width: 80%;
+    margin-left: 25%;
 }
 
 .content {
-    width: 500px;
-    margin: 0 auto;
-    font-family: "Inter", sans-serif;
+    width: 80%;
+    margin-top: 7%;
+    font-family: "Helvetica", sans-serif;
     font-size: 20px;
 }
 
-.buttonclass {
-    text-align: center;
-}
-
-.heroImg button {
-    background-color: black;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
+#hello {
+    font-family: "Helvetica", sans-serif;
     font-weight: bold;
-    padding: 10px 25px;
-    margin: 0 auto;
-    border-radius: 25px;
-    border-color: black;
+    font-size: 80px;
+    margin-bottom: 2%;
 }
 
-.heroImg button:hover {
-    background-color: #00e693;
-    border-color: #00e693;
+#intro {
+    font-family: "Helvetica", sans-serif;
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+
+button {
+    margin-top: 3%;
+    border: 2px solid black;
+    padding: 15px;
+    background-color: white;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold; 
+    color: black;
+}
+
+button:hover {
+    background-color: #00e693; 
+    color: white;
     cursor: pointer;
 }
 
 footer {
-    background-color: black;
-    padding: auto;
-    color: white;
-    font-family: "Inter", sans-serif;
+    width: 80%;
+    height: 20px;
+    margin-left: 15%;
+    color: black;
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
     margin-top: 30px;
+    position: static;
+    bottom: 10px;
+    text-align: center;
 }
 
 footer ul {
-    display: inline-block;
+   /* display: inline-block;
     vertical-align: top;
-    padding: auto;
+    padding: auto;*/
 }
 
 p {
@@ -99,10 +137,11 @@ p {
 }
 
 h1 {
-    text-align: center;
     font-family: "Helvetica", sans-serif;
     text-transform: uppercase;
     color: #2680ff;
+    padding-top: 1%;
+    margin-bottom: 3%;
 }
 
 h2 {
@@ -111,7 +150,6 @@ h2 {
 
 h3 {
     font-family: "Helvetica", sans-serif;
-    text-transform: uppercase;
     color: #e60080;
 }
 
@@ -119,19 +157,4 @@ h4 {
     font-family: "Helvetica", sans-serif;
     font-weight: bold; 
     color: #e60080;
-}
-
-button {
-    border-radius: 30px;
-    border: 0px;
-    padding: 15px;
-    background-color: black;
-    font-family: "Helvetica", sans-serif;
-    font-weight: bold; 
-    color: white;
-}
-
-button:hover {
-    background-color: #00e693; 
-    cursor: pointer;
 }
